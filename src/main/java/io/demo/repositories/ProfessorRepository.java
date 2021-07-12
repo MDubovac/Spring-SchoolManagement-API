@@ -1,4 +1,4 @@
-package io.demo.Repositories;
+package io.demo.repositories;
 
 import io.demo.models.Professor;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,6 +1,6 @@
 package io.demo.services;
 
-import io.demo.Repositories.ProfessorRepository;
+import io.demo.repositories.ProfessorRepository;
 import io.demo.models.Professor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,7 +29,7 @@ public class ProfessorService {
         repository.save(professor);
     }
 
-    public void updateProfessor(Professor professor) {
+    public void updateProfessor(long id, Professor professor) {
         repository.save(professor);
     }
 

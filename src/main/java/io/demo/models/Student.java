@@ -12,18 +12,14 @@ public class Student {
     private String firstName;
     private String lastName;
 
-    @OneToMany(mappedBy = "student")
-    private Set<Grade> grades;
-
     // Constructor
     public Student() {
 
     }
-    public Student(long id, String firstName, String lastName, Set<Grade> grades) {
+    public Student(long id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.grades = grades;
     }
 
     // Get & Set
@@ -49,13 +45,5 @@ public class Student {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public Set<Grade> getGrades() {
-        return grades;
-    }
-
-    public void setGrades(Set<Grade> grades) {
-        this.grades = grades;
     }
 }

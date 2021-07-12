@@ -30,7 +30,7 @@ public class ProfessorController {
 
     @RequestMapping(method = RequestMethod.PUT, value = "professors/{id}")
     private void update(@RequestBody Professor professor, @PathVariable long id) {
-        service.updateProfessor(professor);
+        service.updateProfessor(id, professor);
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "professors/{id}")

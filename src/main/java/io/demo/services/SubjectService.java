@@ -1,6 +1,6 @@
 package io.demo.services;
 
-import io.demo.Repositories.SubjectRepository;
+import io.demo.repositories.SubjectRepository;
 import io.demo.models.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
